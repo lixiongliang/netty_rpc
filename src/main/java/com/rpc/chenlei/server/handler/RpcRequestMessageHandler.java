@@ -32,19 +32,4 @@ public class RpcRequestMessageHandler extends SimpleChannelInboundHandler<RpcReq
         ctx.writeAndFlush(responseMessage);
     }
 
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        RpcRequestMessage message = new RpcRequestMessage(
-                1,
-                "cn.itcast.server.service.HelloService",
-                "sayHello",
-                String.class,
-                new Class[]{String.class},
-                new Object[]{"张三"}
-        );
-        HelloService service = (HelloService)
-                ServicesFactory.getService(Class.forName(message.getInterfaceName()));
-        Method method = service.getClass().getMethod(message.getMethodName(), message.getParameterTypes());
-        Object invoke = method.invoke(service, message.getParameterValue());
-        System.out.println(invoke);
-    }
 }

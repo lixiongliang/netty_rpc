@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-demo" />
         <module name="rpc" />
+        <module name="netty-demo" />
+        <module name="netty_rpc" />
       </profile>
     </annotationProcessing>
   </component>

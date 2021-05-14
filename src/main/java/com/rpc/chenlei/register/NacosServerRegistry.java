@@ -1,8 +1,10 @@
 package com.rpc.chenlei.register;
 
+import com.alibaba.nacos.api.exception.NacosException;
+
 import java.net.InetSocketAddress;
 
-public class NacosServiceRegistry implements ServerRegister{
+public class NacosServerRegistry implements ServerRegister{
 
 
     /**
@@ -11,8 +13,8 @@ public class NacosServiceRegistry implements ServerRegister{
      * @param inetSocketAddress
      */
     @Override
-    public void register(String serviceName, InetSocketAddress inetSocketAddress) {
-
+    public void register(String serviceName, InetSocketAddress inetSocketAddress) throws NacosException {
+        NacosUtils.registerServer(serviceName,inetSocketAddress);
     }
 
     /**
