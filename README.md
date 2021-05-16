@@ -27,5 +27,4 @@
 
 我们本地写和服务器端一样的接口  然后用代理模式 发送请求给服务器端 服务器端返回结果响应
 自己画的流程图 有点简陋
-![输入图片说明](https://images.gitee.com/uploads/images/2021/0516/133308_223a5fbb_8044183.png "屏幕截图.png")
-
+![执行流程](https://images.gitee.com/uploads/images/2021/0516/134406_67d5cf06_8044183.png "屏幕截图.png")
