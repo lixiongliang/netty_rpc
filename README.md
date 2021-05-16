@@ -15,12 +15,16 @@
 
 #### 执行流程
 借用Guide的一张图
+
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0516/130825_6cab1cf2_8044183.png "屏幕截图.png")
 
 具体执行流程
+
 1.
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0516/131232_624ffa54_8044183.png "屏幕截图.png")
+
 2.所以我们客户端需要构建和服务器端能接收的通用请求
+
 我们本地写和服务器端一样的接口  然后用代理模式 发送请求给服务器端 服务器端返回结果响应
 自己画的流程图 有点简陋
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0516/133308_223a5fbb_8044183.png "屏幕截图.png")
